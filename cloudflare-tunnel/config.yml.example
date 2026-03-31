@@ -1,0 +1,11 @@
+# Configuration exemple pour cloudflared
+# Copiez ce fichier : cp config.yml.example config.yml
+# Remplacez les valeurs par vos propres identifiants
+
+tunnel: VOTRE-TUNNEL-ID
+credentials-file: /root/.cloudflared/VOTRE-TUNNEL-ID.json
+
+ingress:
+  - hostname: votre-app.votre-domaine.com
+    service: http://localhost:3000
+  - service: http_status:404

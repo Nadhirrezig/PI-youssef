@@ -1,0 +1,17 @@
+{
+  "name": "DevContainer - Cloudflare Tunnel",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  "forwardPorts": [3000],
+  "postCreateCommand": "cd /workspace/demo-app && npm install",
+  "postStartCommand": "cd /workspace/demo-app && TUNNEL_TYPE=cloudflare npm start",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
