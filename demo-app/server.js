@@ -98,6 +98,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(\`Serveur démarré sur http://localhost:\${PORT}\`);
-  console.log(\`Type de tunnel : \${TUNNEL_TYPE}\`);
+  console.log(`Serveur démarré sur http://localhost:${PORT}`);
+  console.log(`Type de tunnel : ${TUNNEL_TYPE}`);
 });
